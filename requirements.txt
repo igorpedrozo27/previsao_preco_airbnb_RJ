@@ -1,0 +1,9 @@
+matplotlib.pyplot
+plotly.express
+pathlib
+pandas
+openpyxl
+numpy
+seaborn
+scikit-learn
+streamlit

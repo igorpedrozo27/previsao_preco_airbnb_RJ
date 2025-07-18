@@ -18,8 +18,8 @@ Este projeto implementa um pipeline completo de machine learning para prever pre
 
 ```bash
 # Clone o repositório
-git clone https://github.com/igorpedrozo27/previsaoPrecoairbnbRj.git
-cd previsaoPrecoairbnbRj
+git clone https://github.com/igorpedrozo27/previsao_preco_airbnb_RJ.git
+cd previsao_preco_airbnb_RJ
 
 # Crie um ambiente virtual (recomendado)
 python -m venv venv
@@ -94,7 +94,7 @@ from sklearn.model_selection import train_test_split
 plt.figure(figsize=(15,5))
 sns.heatmap(df_base_airbnb.corr(numeric_only=True), annot=True, cmap='coolwarm')
 ```
-![Matriz de corr das features](image.png)
+![Matriz de corr das features](images/image.png)
 ### Mapa de Calor de Preços
 ```python
 amostra = df_base_airbnb.sample(n=50000)
@@ -104,7 +104,7 @@ mapa = px.density_map(amostra, lat='latitude', lon='longitude',z='price', radius
                         map_style='open-street-map',)
 mapa.show()
 ```
-![Mapa de Calor de Preços](newplot_MAP)
+![Mapa de Calor de Preços](images/newplot_MAP)
 
 ### Outras Visualizações
 - Diagramas de Caixa, Histogramas e Gráfico de Barras para Análise Exploratória
