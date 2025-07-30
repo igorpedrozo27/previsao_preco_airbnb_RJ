@@ -1,6 +1,5 @@
 # Previsão de Preços Airbnb Rio de Janeiro
 
-
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![Pandas](https://img.shields.io/badge/pandas-latest-blue)](https://pandas.pydata.org/)
 [![Scikit-learn](https://img.shields.io/badge/scikit--learn-latest-orange)](https://scikit-learn.org/)
@@ -94,7 +93,7 @@ from sklearn.model_selection import train_test_split
 plt.figure(figsize=(15,5))
 sns.heatmap(df_base_airbnb.corr(numeric_only=True), annot=True, cmap='coolwarm')
 ```
-![Matriz de corr das features](images/image.png)
+![Matriz de corr das features](imagespt/image.png)
 ### Mapa de Calor de Preços
 ```python
 amostra = df_base_airbnb.sample(n=50000)
@@ -104,7 +103,7 @@ mapa = px.density_map(amostra, lat='latitude', lon='longitude',z='price', radius
                         map_style='open-street-map',)
 mapa.show()
 ```
-![Mapa de Calor de Preços](images/newplot_MAP)
+![Mapa de Calor de Preços](imagespt/newplot_MAP)
 
 ### Outras Visualizações
 - Diagramas de Caixa, Histogramas e Gráfico de Barras para Análise Exploratória
